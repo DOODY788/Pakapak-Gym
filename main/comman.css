@@ -1,0 +1,111 @@
+/* This is the common css */
+
+/* define */
+body{
+    background-color: var(--base);
+    overflow-x: hidden;
+
+    justify-content: center;
+}       
+a{
+text-decoration: none;
+color: var(--secondary);
+outline: none;
+}
+/* root */
+:root{
+--primary: #00ff00;
+--secondary:white;
+--base:rgb(35,35,35);
+--baseTone1:rgb(45,45,45);
+--trans:rgba(0,0,0,0.5);
+--lighttxt:rgb(50,50,50);
+--backdroptxt:rgb(200,200,200);
+}
+/* Defin Utlility */
+.flex{
+display: flex;
+}
+.flexrow{
+flex-direction: row;
+}
+.flexcolumn{
+flex-direction: column;
+}
+.centerX{
+justify-content: center;
+}
+.centerY{
+align-items: center;
+}
+.fontPrimary{
+font-family: 'IBM Plex Sans', sans-serif;
+/* font-size: 1.2rem; */
+color: var(--secondary);
+}
+.fontStyle{
+font-family: 'Dancing Script', cursive;
+font-size: 1.5rem;
+color: var(--primary);
+font-weight: 100;
+}
+
+
+/* Define button style */
+.defbutton{
+font-size: 1.3rem;
+width: fit-content;
+margin: auto;
+margin-top: 2rem;
+margin-bottom:2rem;
+padding: 0.3rem 1rem 0.3rem 1rem;
+border: 1px solid var(--secondary);
+background-color: transparent;
+color: var(--secondary);
+cursor: pointer;
+overflow: hidden;
+position: relative;
+transition: .5s;
+
+}
+.defbutton::after{
+content: "";
+background-color:var(--secondary);
+width: 0;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+}
+.defbutton:hover:after{
+animation: btnslide;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: normal;
+
+}
+
+.defbutton:focus:after{
+animation: btnslide;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+animation-direction: normal;
+
+}
+
+/* Key frames */
+@keyframes btnslide {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+        left:0;
+        color: var(--trans);
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}

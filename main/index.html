@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fithit Club</title>
+    <link rel="stylesheet" href="/gym/main/gym.css" type="text/css">
+</head> 
+<body>
+    <div class="header flex flexrow centerY">
+        <div class="logo fontStyle">
+            <h3>Fithit</h3>
+        </div>
+        <div class="nav flex flexrow centerY">
+            <ul class="flex flexrow centerY fontPrimary">
+                <li class="item lowerBar flex"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About Us</a></li>
+                <li class="item" onclick="scolpro(this)"><a href="#">Products</a></li>
+                <li class="item" onclick="openwork(this,'Workout')"><a href="#" >Workout</a></li>
+                <li class="item" onclick="scrolcon(this)"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main flex flexcolumn">
+        <div class="workout fontPrimary flex flexcolumn centerY" id="Workout">
+            <span><a href="#" onclick="closework()">X</a></span>
+            <h2>Work With Us :</h2>
+            <p>HEre you can workout in our gyms</p>
+            <div class="gymcards flex flexrow centerY">
+                <div class="gym-card" id="NewYork">
+                    <h4>NewYork</h4>
+                    <p>Participate in the gyms available in NewYork</p>
+                    <br>
+                    <img src="/gym/sources/Newyork.jpg" alt="NewYork">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam dolor incidunt placeat minus, rerum obcaecati adipisci quisquam quo nulla numquam, enim reiciendis? Eligendi, laboriosam! Ducimus, eius. Voluptate unde earum vero beatae aperiam repudiandae laudantium nihil porro aspernatur necessitatibus error ad ut autem, illum consequatur at ex reiciendis tempore nemo.</p>
+                    <br>
+                    <button class="defbutton">Learn More</button>
+                </div>
+                <div class="gym-card" id="India">
+                    <h4>India</h4>
+                    <p>Participate in the gyms available in India</p>
+                    <br>
+                    <img src="/gym/sources/India.jpg" alt="India">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur consequatur at iure perferendis. Dolorem placeat quibusdam nam ratione non earum repellendus error neque sequi minima officiis tempore, alias numquam, dolor nihil voluptatibus eveniet sunt labore dolores adipisci est. Totam aperiam accusamus odit nam ab. Unde suscipit sapiente numquam aliquam?</p>
+                    <br>
+                    <button class="defbutton">Learn More</button>
+                </div>
+                <div class="gym-card" id="Berlin">
+                    <h4>Berlin</h4>
+                    <p>Participate in the gyms available in Berlin</p>
+                    <br>
+                    <img src="/gym/sources/Berlin.jpg" alt="Berlin">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur nesciunt et alias, aperiam voluptas earum quam enim culpa velit reprehenderit, tempore doloremque pariatur est ipsam vel quod illum? Laborum, perspiciatis dolores corrupti consequuntur sit modi veniam id repellendus tempora nostrum dicta odio harum, delectus quae iure, voluptate iste necessitatibus?</p>
+                    <br>
+                    <button class="defbutton">Learn More</button>
+                </div>
+                <div class="gym-card" id="Losangel">
+                    <h4>Losangels</h4>
+                    <p>Participate in the gyms available in Losangels</p>
+                    <br>
+                    <img src="/gym/sources/Losangel.jpg" alt="Losangel">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus architecto perferendis, asperiores rerum sunt cum quo optio voluptas exercitationem officiis possimus voluptatum placeat esse odio eligendi atque doloribus ex quod nobis eos! Placeat, id qui. Enim perferendis, incidunt cupiditate deserunt error qui alias adipisci, porro quibusdam nisi asperiores labore sequi.</p>
+                    <br>
+                    <button class="defbutton">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="content fontPrimary">
+            <div class="intro flex flexcolumn centerY">
+                <h2>We Make it possible together!</h2>
+                <p>It's your first step to become fit by visiting our site. Our products and guidence by professional
+                    gym trainers will help you achieve your goal in few months. We provide every material for you to
+                    start with. More information is available in out site, you need to scroll down to find more!</p>
+
+                <button class="defbutton"><a href="/login" target="_blank">Get Started</a></button>
+            </div>
+            <div class="product-over-view" id="products">
+                <h3>Our products</h3>
+                <div class="products flex flexrow centerY">
+
+                    <div class="productcard flex flexcolumn" id="product1">
+                        <h4>Protein Shake</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, at eaque ducimus quibusdam quod suscipit maiores ipsum numquam accusantium laudantium ex commodi repellendus ab maxime doloremque expedita iusto, unde vitae nobis cumque dignissimos? Molestiae quidem maiores blanditiis placeat. Sunt repellat alias a odio itaque ducimus nam ex ipsum voluptatem cupiditate!</p>
+                        <button class="defbutton" id="protien-check">Check More</button>
+                    </div>
+
+                    <div class="productcard flex flexcolumn" id="product2">
+                        <h4>Dumbles</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia aliquid recusandae temporibus consequatur voluptates ratione incidunt nostrum labore provident vitae aperiam, laborum deserunt, dolorum facere ipsum omnis itaque voluptatem. Quisquam ad consequatur dolores cum fugiat eaque necessitatibus aperiam impedit libero. Suscipit cumque quis assumenda quaerat, cupiditate tempore commodi pariatur!</p>
+
+                        <button class="defbutton" id="dumbbtn">Check More</button>
+                    </div>
+                    <div class="productcard flex flexcolumn" id="product3">
+                        <h4>Energy⚡</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti dignissimos consequatur ex. Ipsa inventore perferendis, animi eveniet doloribus esse impedit. Asperiores, quae. Officiis maxime, rerum tenetur quaerat natus voluptatem illo ullam, dolorum et distinctio, ipsa est error recusandae dolor quasi! In sed veritatis cupiditate pariatur facilis consequatur dolores quaerat?</p>
+
+                        <button class="defbutton">Check More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer fontPrimary">
+        <div class="contactus" id="contact">
+            <h2>Contact Us here</h2>
+            <h3>We will reply soon!</h3>
+            <form action="" class="con flex flexcolumn centerY">
+                <input type="text" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter Your Surname">
+                <textarea name="" class="fontPrimary" id="response" cols="30" rows="10"
+                    placeholder="write your response"></textarea>
+                <button class="defbutton sndbtn" id="sendresponse">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/gym/main/front.js"></script>
+
+</html>

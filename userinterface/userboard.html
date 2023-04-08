@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User@112 | Fithit</title>
+    <link rel="stylesheet" href="/gym/main/comman.css">
+    <link rel="stylesheet" href="/gym/userinterface/userinter.css">
+</head>
+
+<body>
+    <div class="usr-container flex flexrow centerY">
+        <div class="navbar flex flexcolumn centerY">
+            <div class="user fontPrimary">
+                <div class="userpic"></div>
+                <h3>User@122</h3>
+            </div>
+            <div class="navigation">
+                <ul class="fontPrimary">
+                    <br>
+                    <li class="nav-items"><a href="#" onclick='opensection("dash","cntboard")'>Dashboard</a></li>
+                    <li class="nav-items"><a href="#">My Diet</a></li>
+                    <li class="nav-items"><a href="#" onclick='opensection("chat","cntboard")'>Chat</a></li>
+                    <li class="nav-items"><a href="#">Membership</a></li>
+                    <br>
+                    <li class="nav-items"><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div class="cntboard fontPrimary" id="dash">
+                <div class="greet">
+                    <h2>Hello User ;)</h2>
+                </div>
+                <div class="status fontPrimary">
+                    <h2>Get a look on your progress</h2>
+                    <div class="statcont">
+                        <div class="workhour cards">
+                            <h4>Your workout hour is exponentialy increasing!</h4>
+                            <div class="static flex flexrow centerY">
+                                <div class="bar" id="bar1"></div>
+                                <div class="bar" id="bar2"></div>
+                                <div class="bar" id="bar3"></div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae asperiores veniam expedita
+                                error voluptatum placeat, corporis sequi omnis recusandae aliquam?</p>
+                        </div>
+                        <div class="worktype cards">
+                            <h4>You spent this much time in last 7 days</h4>
+                            <div class="legs"></div>
+                            <div class="chest"></div>
+                            <div class="cardio"></div>
+                            <p>Load More</p>
+                        </div>
+                        <div class="ad cards">
+                            <h4>Get 50% off on this purchase</h4>
+                            <img src="" alt="product">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus minus, tempore omnis
+                                saepe fugiat harum natus cupiditate minima eveniet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cntboard flex flexcolumn centerY centerX" id="chat">
+                <div class="chatbody flex flexrow centerY">
+                    <div class="contacts fontPrimary">
+                        <div class="gymtrn con">
+                            <div class="logo"></div>
+                            <h3>Rober</h3>
+                            <p>Gym Trainer</p>
+                        </div>
+                        <div class="gymgrp con">
+                            <div class="logo"></div>
+                            <h3>Fithit </h3>
+                            <p>Gym Group</p>
+                        </div>
+                    </div>
+                    <div class="chatcont">
+                        <div class="chats" id="gym-trainer">
+                            
+                            <div class="messg"></div>
+                            <div class="text">
+                                <input type="text" placeholder="start conversation here">
+                                <button class="txtbutton" id="gym-t">Send</button>
+                            </div>
+                        </div>
+                        <div class="chats" id="gym-group">
+
+                            <div class="messg"></div>
+                            <div class="text">
+                                <input type="text" placeholder="start conversation here">
+                                <button class="txtbutton" id="gym-g">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="board"></div>
+    </div>
+</body>
+<script src="/gym/userinterface/userinter.js"></script>
+
+</html>
