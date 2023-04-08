@@ -150,7 +150,7 @@ li{
     width: 0;
 }
 .main .content{
-    background-image: url(/gym/sources/gallery1.jpg);
+    background-image: url('../sources/gallery1.jpg');
     background-repeat: no-repeat;
 }
 .main .intro{
@@ -173,7 +173,7 @@ li{
     margin-top: 5rem;
 }
 .main .product-over-view{
-    background-image: url('/gym/sources/cardbg.png');
+    background-image: url('./sources/cardbg.png');
     background-repeat:round;
     background-size:cover;
     margin-top: 40rem;

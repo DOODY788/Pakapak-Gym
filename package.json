@@ -1,0 +1,24 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "Pakapak gym",
+  "main": "backendGym.js",
+  "scripts": {
+    "dev": "nodemon backendGym.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOODY788/Pakapak-Gym.git"
+  },
+  "author": "Nikhil Hegde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DOODY788/Pakapak-Gym/issues"
+  },
+  "homepage": "https://github.com/DOODY788/Pakapak-Gym#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pug": "^3.0.2"
+  }
+}
